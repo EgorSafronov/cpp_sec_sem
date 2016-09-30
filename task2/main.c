@@ -92,7 +92,7 @@ char *read_s(FILE * f_temp) {
     } else {
         is_null = false;
     }
-    char *str_temp = (char *) malloc(sizeof(char) * 30);
+    char *str_temp = (char *) malloc(sizeof(char) * 32);
     char x;
     if (is_null) {
         scanf("%c", &x);
@@ -103,7 +103,7 @@ char *read_s(FILE * f_temp) {
     while ((x != '\n') && (x != 32)) {
         str_temp[i_temp++] = x;
         if (i_temp == strlen(str_temp)) {
-            str_temp = (char *) realloc(str_temp, sizeof(char) * (strlen(str_temp) + 1));
+            str_temp =  realloc(str_temp, sizeof(char) * (strlen(str_temp) + 10));
         }
         if (is_null) {
             scanf("%c", &x);
