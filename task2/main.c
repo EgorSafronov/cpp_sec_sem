@@ -1,3 +1,4 @@
+
 //
 //  main.c
 //  C++(HomeTasks)
@@ -99,7 +100,7 @@ char *read_s(FILE * f_temp) {
         fscanf(f_temp, "%c", &x);
     }
     int i_temp = 0;
-    while (x != '\n') {
+    while ((x != '\n') && (x != 32)) {
         str_temp[i_temp++] = x;
         if (i_temp == strlen(str_temp)) {
             str_temp = (char *) realloc(str_temp, sizeof(char) * (strlen(str_temp) + 1));
