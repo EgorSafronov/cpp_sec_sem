@@ -1,4 +1,3 @@
-
 //
 //  main.c
 //  C++(HomeTasks)
@@ -181,6 +180,7 @@ void find() {
             printf("%d %s %s\n", a[i].id, a[i].name, a[i].phone);
         }
     }
+    fflush(stdout);
     return;
 }
 
