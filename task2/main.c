@@ -1,3 +1,4 @@
+
 //
 //  main.c
 //  C++(HomeTasks)
@@ -103,12 +104,13 @@ char *read_s(FILE * f_temp) {
         str_temp[i_temp++] = x;
         if (i_temp == strlen(str_temp)) {
             str_temp = (char *) realloc(str_temp, sizeof(char) * (strlen(str_temp) + 1));
-            if (is_null) {
-                scanf("%c", &x);
-            } else {
-                fscanf(f_temp, "%c", &x);
-            }
         }
+        if (is_null) {
+            scanf("%c", &x);
+        } else {
+            fscanf(f_temp, "%c", &x);
+        }
+    
     }
     str_temp[i_temp] = '\0';
     return str_temp;
