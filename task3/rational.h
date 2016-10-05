@@ -17,11 +17,11 @@ private:
     
 public:
     rational(int num);
-    rational(int num, int denom);
-    rational operator +(rational const &temp);
-    rational operator -(rational const &temp);
-    rational operator *(rational const &temp);
-    rational operator /(rational const &temp);
+    rational(int , int denom);
+    rational operator +(rational const &temp) const;
+    rational operator -(rational const &temp) const;
+    rational operator *(rational const &temp) const;
+    rational operator /(rational const &temp) const;
     int getNum() const;
     int getDenom() const;
     
