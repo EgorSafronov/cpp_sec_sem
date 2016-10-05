@@ -20,19 +20,19 @@ rational::rational(int num, int denom) {
     this->denom = denom / temp;
 };
 
-rational rational::operator +(rational const &temp) {
+rational rational::operator +(rational const &temp) const {
     return rational(num * temp.denom + temp.num * denom, denom * temp.denom);
 };
 
-rational rational::operator -(rational const &temp) {
+rational rational::operator -(rational const &temp) const {
     return rational(num * temp.denom - temp.num * denom, denom * temp.denom);
 };
 
-rational rational::operator *(rational const &temp) {
+rational rational::operator *(rational const &temp) const {
     return rational(num * temp.num, denom * temp.denom);
 };
 
-rational rational::operator /(rational const &temp) {
+rational rational::operator /(rational const &temp) const {
     return rational(num * temp.denom, denom * temp.num);
 };
 
