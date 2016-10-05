@@ -1,13 +1,13 @@
 //
-//  rational.hpp
+//  rational.h
 //  C++(HomeTasks)
 //
-//  Created by Egor Safronov on 00.10.16.
+//  Created by Egor Safronov on 05.10.16.
 //  Copyright © 2016 Egor Safronov. All rights reserved.
 //
 
-#ifndef rational_hpp
-#define rational_hpp
+#ifndef rational_h
+#define rational_h
 
 class rational {
 private:
@@ -28,4 +28,4 @@ public:
     
 };
 
-#endif /* rational_hpp */
+#endif /* rational_h */
