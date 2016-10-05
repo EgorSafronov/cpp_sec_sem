@@ -2,11 +2,11 @@
 //  rational.cpp
 //  C++(HomeTasks)
 //
-//  Created by Egor Safronov on 00.10.16.
+//  Created by Egor Safronov on 05.10.16.
 //  Copyright © 2016 Egor Safronov. All rights reserved.
 //
 
-#include "rational.hpp"
+#include "rational.h"
 //#include <algorithm>
 
 rational::rational(int num) {
