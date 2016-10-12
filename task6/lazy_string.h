@@ -10,6 +10,7 @@
 #define lazy_string_h
 
 #include <string>
+#include <memory>
 
 class lazy_string {
     struct lazy_char {
