@@ -68,7 +68,7 @@ lazy_string lazy_string::substr(size_t pos, size_t len) {
     } else {
         temp = len;
     }
-    return lazy_string::lazy_string(this->sh_s, this->beg + pos, temp);
+    return lazy_string(this->sh_s, this->beg + pos, temp);
 }
 
 lazy_string::operator std::string() {
