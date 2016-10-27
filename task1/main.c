@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
             scanf("%d %d %d", &y1, &x2, &y2);
             x1--;
             y1--;
-            if ((x1 <= 0) || (y1 <= 0) || (x2 <= 0) || (y2 <= 0)) {
+            if ((x1 < 0) || (y1 <= 0) || (x2 <= 0) || (y2 <= 0)) {
                 printf("%s", "Invalid location");
             } else {
                 if ((x1 > n) || (y1 > n) || (x2 > n) || (y2 > n)) {
