@@ -31,11 +31,15 @@ int main(int argc, const char * argv[]) {
             scanf("%d %d %d", &y1, &x2, &y2);
             x1--;
             y1--;
-            for (int i = x1; i < x2; i++) {
-                for (int j = y1; j < y2; j++) {
-                    printf("%d ", a[i * n + j]);
+            if ((x1 > n) || (y1 > n) || (x2 > n) || (y2 > n)) {
+                printf("%s", "Invalid location");
+            } else {
+                for (int i = x1; i < x2; i++) {
+                    for (int j = y1; j < y2; j++) {
+                        printf("%d ", a[i * n + j]);
+                    }
+                    printf("\n");
                 }
-                printf("\n");
             }
             
         }
